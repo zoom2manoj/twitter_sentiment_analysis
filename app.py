@@ -90,8 +90,8 @@ def main():
     # creating object of TwitterClient Class
     api = TwitterClient()
     # calling function to get tweets
-    tweets = api.get_tweets(query = 'Narendra Modi', count = 200)
-    print("query : Narendra Modi")
+    tweets = api.get_tweets(query = 'Mr. Narendra Modi', count = 200)
+    print("query : Mr. Narendra Modi")
  
     # picking positive tweets from tweets
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
